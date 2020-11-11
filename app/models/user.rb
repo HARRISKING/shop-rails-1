@@ -1,13 +1,10 @@
 class User < ApplicationRecord
   has_secure_password
-end
 
-# user = User.new
-# user.email = '1@qq.com'
-# user.password = '123'
-# user.password_confirm = '123'
-# user.save
-def create
-  user = User.new
+  validates_presence_of :email
+  validates_uniqueness_of :email
+  validates_presence_of :password_confirmation, on: [:create]
 
+  validates_length_of :password, :password_confirmation, minimum: 6
+  validates_format_of :email, with: /.+@.+/, if: Proc.new { |u| u.email.present? }
 end
