@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
   def create
-    user = User.new
-    user.email = params[:email]
-    user.password = params[:password]
-    user.password_confirmation = params[:password_confirmation]
-    user.save
-    p '报错信息》》》》》》》'
-    p user.errors
+    render_response User.create create_params
   end
+
+  def create_params
+    params.permit(:email, :password, :password_confirmation)
+  end
+
 end
