@@ -11,10 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="264c208a-5d6b-446a-a92b-5b1dbfb727cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/session.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/sessions_request_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/sessions_request_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/session.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/session.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -511,7 +510,7 @@
       <workItem from="1604988574211" duration="85000" />
       <workItem from="1604997785905" duration="5552000" />
       <workItem from="1605057017893" duration="16441000" />
-      <workItem from="1605145381541" duration="9058000" />
+      <workItem from="1605145381541" duration="10498000" />
     </task>
     <servers />
   </component>
