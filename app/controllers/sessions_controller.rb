@@ -1,9 +1,11 @@
 class SessionsController < ApplicationController
   def create
-    p response.body
-    p response.status
-    p session
-
+    session = Session.new create_params
+    session.validate
+    render_response session
   end
 
+  def create_params
+    params.permit(:email, :password)
+  end
 end
